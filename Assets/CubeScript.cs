@@ -53,7 +53,21 @@ public class CubeScript : MonoBehaviour
             new Vector3(1.0f, -1.0f, 1.0f),
             new Vector3(1.0f, -1.0f, -1.0f),
             new Vector3(1.0f, 1.0f, -1.0f),
-            new Vector3(1.0f, 1.0f, 1.0f)
+            new Vector3(1.0f, 1.0f, 1.0f),
+
+            new Vector3(-1.0f, -1.0f, -1.0f), // Front
+            new Vector3(-1.0f, 1.0f, -1.0f),
+            new Vector3(1.0f, 1.0f, -1.0f),
+            new Vector3(-1.0f, -1.0f, -1.0f),
+            new Vector3(1.0f, 1.0f, -1.0f),
+            new Vector3(1.0f, -1.0f, -1.0f),
+
+            new Vector3(1.0f, 1.0f, 1.0f), // Back
+            new Vector3(-1.0f, 1.0f, 1.0f),
+            new Vector3(-1.0f, -1.0f, 1.0f),
+            new Vector3(1.0f, 1.0f, 1.0f),
+            new Vector3(-1.0f, -1.0f, 1.0f),
+            new Vector3(1.0f, -1.0f, 1.0f)
 
             // Task 2: Define vertices for front and back faces
             // Remember to also define corresponding vertex colours!
@@ -68,12 +82,12 @@ public class CubeScript : MonoBehaviour
             Color.red,
             Color.red,
 
-            Color.red, // Bottom
-            Color.red,
-            Color.red,
-            Color.red,
-            Color.red,
-            Color.red,
+            Color.green, // Bottom
+            Color.green,
+            Color.green,
+            Color.green,
+            Color.green,
+            Color.green,
 
             Color.yellow, // Left
             Color.yellow,
@@ -82,12 +96,26 @@ public class CubeScript : MonoBehaviour
             Color.yellow,
             Color.yellow,
 
-            Color.yellow, // Right
-            Color.yellow,
-            Color.yellow,
-            Color.yellow,
-            Color.yellow,
-            Color.yellow
+            Color.blue, // Right
+            Color.blue,
+            Color.blue,
+            Color.blue,
+            Color.blue,
+            Color.blue,
+
+            Color.grey, // Front
+            Color.grey,
+            Color.grey,
+            Color.grey,
+            Color.grey,
+            Color.grey,
+
+            Color.black, // Back
+            Color.black,
+            Color.black,
+            Color.black,
+            Color.black,
+            Color.black
         };
 
         // Automatically define the triangles based on the number of vertices
