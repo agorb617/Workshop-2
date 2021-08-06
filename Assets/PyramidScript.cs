@@ -27,12 +27,6 @@ public class PyramidScript : MonoBehaviour
         // Define the vertices. These are the "points" in 3D space that allow us to
         // construct 3D geometry (by connecting groups of 3 points into triangles).
         m.vertices = new[] {
-            new Vector3(-1.0f, 1.0f, -1.0f), // Top
-            new Vector3(-1.0f, 1.0f, 1.0f),
-            new Vector3(1.0f, 1.0f, 1.0f),
-            new Vector3(-1.0f, 1.0f, -1.0f),
-            new Vector3(1.0f, 1.0f, 1.0f),
-            new Vector3(1.0f, 1.0f, -1.0f),
 
             new Vector3(-1.0f, -1.0f, -1.0f), // Bottom
             new Vector3(1.0f, -1.0f, 1.0f),
@@ -43,31 +37,19 @@ public class PyramidScript : MonoBehaviour
 
             new Vector3(-1.0f, -1.0f, -1.0f), // Left
             new Vector3(-1.0f, -1.0f, 1.0f),
-            new Vector3(-1.0f, 1.0f, 1.0f),
-            new Vector3(-1.0f, -1.0f, -1.0f),
-            new Vector3(-1.0f, 1.0f, 1.0f),
-            new Vector3(-1.0f, 1.0f, -1.0f),
+            new Vector3(0f, 1f, 0f),
 
-            new Vector3(1.0f, -1.0f, -1.0f), // Right
-            new Vector3(1.0f, 1.0f, 1.0f),
-            new Vector3(1.0f, -1.0f, 1.0f),
+            new Vector3(1.0f, -1.0f, 1.0f), // Right
             new Vector3(1.0f, -1.0f, -1.0f),
-            new Vector3(1.0f, 1.0f, -1.0f),
-            new Vector3(1.0f, 1.0f, 1.0f),
+            new Vector3(0f, 1f, 0f),
 
-            new Vector3(-1.0f, -1.0f, -1.0f), // Front
-            new Vector3(-1.0f, 1.0f, -1.0f),
-            new Vector3(1.0f, 1.0f, -1.0f),
+            new Vector3(1.0f, -1.0f, -1.0f), // Front
             new Vector3(-1.0f, -1.0f, -1.0f),
-            new Vector3(1.0f, 1.0f, -1.0f),
-            new Vector3(1.0f, -1.0f, -1.0f),
+            new Vector3(0f, 1f, 0f),
 
-            new Vector3(1.0f, 1.0f, 1.0f), // Back
-            new Vector3(-1.0f, 1.0f, 1.0f),
-            new Vector3(-1.0f, -1.0f, 1.0f),
-            new Vector3(1.0f, 1.0f, 1.0f),
-            new Vector3(-1.0f, -1.0f, 1.0f),
-            new Vector3(1.0f, -1.0f, 1.0f)
+            new Vector3(-1.0f, -1.0f, 1.0f), // Backsw
+            new Vector3(1.0f, -1.0f, 1.0f), 
+            new Vector3(0f, 1f, 0f)
 
             // Task 2: Define vertices for front and back faces
             // Remember to also define corresponding vertex colours!
@@ -75,12 +57,6 @@ public class PyramidScript : MonoBehaviour
 
         // Define the vertex colours
         m.colors = new[] {
-            Color.red, // Top
-            Color.red,
-            Color.red,
-            Color.red,
-            Color.red,
-            Color.red,
 
             Color.green, // Bottom
             Color.green,
@@ -92,30 +68,22 @@ public class PyramidScript : MonoBehaviour
             Color.yellow, // Left
             Color.yellow,
             Color.yellow,
-            Color.yellow,
-            Color.yellow,
-            Color.yellow,
+
 
             Color.blue, // Right
             Color.blue,
             Color.blue,
-            Color.blue,
-            Color.blue,
-            Color.blue,
+
 
             Color.grey, // Front
             Color.grey,
             Color.grey,
-            Color.grey,
-            Color.grey,
-            Color.grey,
+
 
             Color.black, // Back
             Color.black,
-            Color.black,
-            Color.black,
-            Color.black,
             Color.black
+
         };
 
         // Automatically define the triangles based on the number of vertices
